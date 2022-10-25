@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "7922d55f-b5fe-4426-8867-cf2c2248028d",
+		"name": "Mongo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "addperson",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idPersona\": 15,\r\n    \"username\": \"luisdaniel\",\r\n    \"name\": \"luis daniel\",\r\n    \"email\":\"luisdaniel.acosta@bosonit.com\",\r\n    \"age\": 34\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/addperson",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"addperson"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/persona/get/6357a1b77a66aa72c810c088",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"persona",
+						"get",
+						"6357a1b77a66aa72c810c088"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mostrar todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/persona/getall",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"persona",
+						"getall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/persona/delete/63579c2fa66e781b01f8deb0",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"persona",
+						"delete",
+						"63579c2fa66e781b01f8deb0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"daniella\",\r\n    \"password\": \"La ciudad es, madrid\",\r\n    \"name\": \"daniella\",\r\n    \"surname\": \"acosta de la rosa\",\r\n    \"company_email\": \"daniella@bosonit.com\",\r\n    \"personal_email\": \"Daniella@bosonit.com\",\r\n    \"city\": \"madrid\",\r\n    \"active\": \"true\",\r\n    \"created_date\": \"2012-08-02\",\r\n    \"imagen_url\": \"ok\",\r\n    \"termination_date\": \"2023-01-31\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/persona/put/6357a1587a66aa72c810c087",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"persona",
+						"put",
+						"6357a1587a66aa72c810c087"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Pagina",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/persona/getall/2",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"persona",
+						"getall",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
